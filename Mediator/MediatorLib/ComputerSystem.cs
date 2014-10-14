@@ -8,5 +8,19 @@ namespace MediatorLib
 {
     public class ComputerSystem
     {
+        public void ComputerSwitchedOn()
+        {
+            Console.WriteLine("Welcome");
+        }
+
+        public void ComputerSwitchedOff()
+        {
+            Console.WriteLine("Goodbye");
+        }
+
+        public void KeyboardKeyPressed()
+        {
+            Console.WriteLine("Key is pressed!");
+        }
     }
 }

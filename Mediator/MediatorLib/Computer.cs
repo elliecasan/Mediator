@@ -18,11 +18,13 @@ namespace MediatorLib
         public void SwitchOn()
         {
             Console.WriteLine("Computer switched on!");
+            _mediator.ComputerSwitchedOn();
         }
 
         public void SwichdOff()
         {
             Console.WriteLine("Computor is switched off!");
+            _mediator.ComputerSwitchedOff();
         }
     }
 }

@@ -17,6 +17,7 @@ namespace MediatorLib
         public void Enabled()
         {
             Console.WriteLine("Keyboard enabled!");
+            _mediator.KeyboardKeyPressed();
         }
 
         public void Disabled()
