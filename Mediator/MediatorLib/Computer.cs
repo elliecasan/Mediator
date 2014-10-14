@@ -13,6 +13,7 @@ namespace MediatorLib
         public Computer(ComputerSystem mediator)
         {
             _mediator = mediator;
+            mediator.RegisterComputer(this);
         }
 
         public void SwitchOn()

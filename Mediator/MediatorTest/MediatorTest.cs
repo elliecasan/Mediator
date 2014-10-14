@@ -17,7 +17,7 @@ namespace MediatorTest
             Screen screen = new Screen(mediator);
             //Act
             computer.SwitchOn();
-            keyboard.Enabled();
+            keyboard.KeyPress("Hello");
             //Assert
         }
     }

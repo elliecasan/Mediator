@@ -14,6 +14,7 @@ namespace MediatorLib
         public Screen(ComputerSystem mediator)
         {
             _mediator = mediator;
+            mediator.RegisterScreen(this);
         }
 
         public void TurnOn()
@@ -24,6 +25,12 @@ namespace MediatorLib
         public void TurnOff()
         {
             Console.WriteLine("Screen is turned off!");
+        }
+
+        public void OutPut(string message)
+        {
+            Console.WriteLine(message + "This character was pressed!");
+       
         }
     }
 }

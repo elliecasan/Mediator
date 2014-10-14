@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleMediator\ConsoleMediator.csproj">
+      <Project>{09b2ed97-cc76-4a0d-a451-606b059cc108}</Project>
+      <Name>ConsoleMediator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MediatorLib\MediatorLib.csproj">
       <Project>{84ddae28-ef52-4122-ba0a-0968f561d976}</Project>
       <Name>MediatorLib</Name>
