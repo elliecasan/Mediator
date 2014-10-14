@@ -5,16 +5,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MediatorTest
 {
     [TestClass]
-    public class UnitTest1
+    public class MediatorTest
     {
         [TestMethod]
         public void Test_That_Screen_Produces_Output()
         {
             //Arrange
             ComputerSystem mediator = new ComputerSystem();
-            Computer computer= new Computer();
-            Keyboard keyboard = new Keyboard();
-            Screen screen = new Screen();
+            Computer computer= new Computer(mediator);
+            Keyboard keyboard = new Keyboard(mediator);
+            Screen screen = new Screen(mediator);
             //Act
 
             //Assert

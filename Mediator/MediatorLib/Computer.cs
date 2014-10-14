@@ -8,5 +8,21 @@ namespace MediatorLib
 {
     public class Computer
     {
+        private ComputerSystem _mediator;
+
+        public Computer(ComputerSystem mediator)
+        {
+            _mediator = mediator;
+        }
+
+        public void SwitchOn()
+        {
+            Console.WriteLine("Computer switched on!");
+        }
+
+        public void SwichdOff()
+        {
+            Console.WriteLine("Computor is switched off!");
+        }
     }
 }
